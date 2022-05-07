@@ -30,16 +30,19 @@ a:active {
 }
 
 .logo{
+    background-color: white;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    position: relative;
+    bottom: 4rem;
 }
 
 .main-navbar{
     display: flex;
-    background-color: grey;
-    /*box-shadow: 0 0.5rem;*/
+    background-color: white;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     flex-wrap: wrap;
 
 }
@@ -57,16 +60,35 @@ a:active {
     margin-left: auto;
 }
 
+.main-navbar > :first-child{
+    margin-left: 6rem;
+}
+
+.main-navbar > :last-child{
+    margin-right: 6rem;
+}
+
 .secondary-navbar{
     display: flex;
     background-color: pink;
 }
 
 .icon{
-    width: 1.5em;
-
+    width: 1.7em;
+    margin-left: auto;
 }
 
+.secondary-navbar > li + li {
+    margin-left: 1.5rem;
+}
+
+.secondary-navbar > :first-child{
+    margin-left: auto;
+}
+
+.secondary-navbar > :last-child{
+    margin-right: auto;
+}
 .button {
     display: inline-flex;
     width: 6rem;
