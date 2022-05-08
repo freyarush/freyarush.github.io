@@ -122,9 +122,6 @@ a:active {
     max-width: 70%;
 }
 
-
-
-
 .heading{
     text-align: center;
     font-size: 1.2rem;
@@ -151,6 +148,71 @@ a:active {
     height: 15rem;
     background-color: #C1D8D3;
     margin-top: 3rem;
+    box-shadow: inset 0 0.3rem 0.3rem #93BAB1;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-nav > ul >li + li{
+    margin-top: 1rem;
+}
+
+.leftnav{
+    text-align: left;
+    width; 5rem;
+    margin-top: 2rem;
+    margin-right: 10rem;
+}
+
+.rightnav{
+    text-align: right;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+.footer-divider{
+    height: 2.5rem;
+    box-shadow: 0 0.3rem 0.3rem #B6D1CB;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-heading{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #C1D8D3;
+    position: relative;
+    top: 2rem;
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.facebook{
+    width: 3rem;
+}
+
+.instagram{
+    width: 2rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.email{
+    width: 2.5rem;
+    margin-top: 0.2rem;
 }
 
 .button {
