@@ -119,6 +119,7 @@ a:active {
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     margin-left: auto;
     margin-right: auto;
+    max-width: 70%;
 }
 
 
@@ -145,6 +146,12 @@ a:active {
     display: flex;
     justify-content: space-between;
 }*/
+
+.footer{
+    height: 15rem;
+    background-color: #C1D8D3;
+    margin-top: 3rem;
+}
 
 .button {
     display: inline-flex;
