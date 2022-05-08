@@ -14,14 +14,14 @@ a:visited {
 }
 a:hover { 
     text-decoration: none; 
-    color: #04604b;
+    color: #80afa4;
 }
 a:active { 
     text-decoration: none; 
-    color: #04604b;
+    color: #80afa4;
 }
 
-.fontstyle{
+.font-style{
     text-decoration: none;
     color: #04604b;
     font-family: "Kohinoor Bangla";
@@ -29,21 +29,28 @@ a:active {
     font-size: 1.2em;
 }
 
+.logo-section{
+
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    height: 8.5rem;
+}
+
 .logo{
     background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 18%;
+    max-width: 18%;
     position: relative;
     bottom: 4rem;
+    margin-bottom: 0;
 }
+
 
 .main-navbar{
     display: flex;
     background-color: white;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
-    flex-wrap: wrap;
 
 }
 
@@ -70,16 +77,25 @@ a:active {
 
 .secondary-navbar{
     display: flex;
-    background-color: pink;
+    height: 3rem;
+    width: 10rem;
+    background-color: white;
+    position: relative;
+    bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon{
     width: 1.7em;
     margin-left: auto;
+    background-color: white;
+    
 }
 
 .secondary-navbar > li + li {
     margin-left: 1.5rem;
+    
 }
 
 .secondary-navbar > :first-child{
@@ -89,6 +105,47 @@ a:active {
 .secondary-navbar > :last-child{
     margin-right: auto;
 }
+
+.storefront {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
+}
+
+.line-divider{
+    height: 4.5rem;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.heading{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: white;
+    position: relative;
+    top: 4rem;
+    width: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.white-border{
+    background-color: white;
+    max-width: 15%;
+    height: 100%;
+}
+
+.border{
+    display: flex;
+    justify-content: space-between;
+}*/
+
 .button {
     display: inline-flex;
     width: 6rem;
