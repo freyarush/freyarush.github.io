@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
 
 :root{
     font-size: 16px;
@@ -144,6 +144,91 @@ a:active {
     justify-content: space-between;
 }*/
 
+.all-books{
+    display: flex;
+    background-color: pink;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-items: center;
+    max-width: 100%;
+}
+
+.multiple-books{
+    margin-left: auto;
+}
+
+.multiple-books > div{
+    display: flex;
+    background-color: aquamarine;
+    max-width: fit-content;
+}
+
+.main-book-style{
+    max-width: fit-content;
+    margin-right: auto;
+    text-align: center;
+}
+
+.main-book-style > h5 {
+    font-family: "Kohinoor Bangla";
+    font-size: 1.2rem;
+    color: #222222;
+    
+}
+
+.main-book-style > :nth-child(3){
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color: #A7A7A7;
+}
+
+.main-book-style > :nth-child(4){
+    font-family: "Kohinoor Bangla";
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #656565;
+}
+
+.main-book-style > img {
+    max-width: 14rem;
+    box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
+}
+
+.book-style{
+    margin-right: 2rem;
+    background-color: plum;
+    text-align: center;
+}
+
+.book-style > h5 {
+    font-family: "Kohinoor Bangla";
+    font-size: 0.8rem;
+    color: #222222;
+    
+}
+
+.book-style > :nth-child(3){
+    font-family: 'PT Serif', serif;
+    font-size: 0.75rem;
+    margin-top: 0.2rem;
+    color: #A7A7A7;
+}
+
+.book-style > :nth-child(4){
+    font-family: "Kohinoor Bangla";
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    color: #222222;
+}
+
+.book-style > img {
+    max-width: 6.5rem;
+    box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
+}
+
+
 .footer{
     height: 15rem;
     background-color: #C1D8D3;
@@ -163,7 +248,6 @@ a:active {
 
 .leftnav{
     text-align: left;
-    width; 5rem;
     margin-top: 2rem;
     margin-right: 10rem;
 }
@@ -173,6 +257,8 @@ a:active {
     margin-top: 2rem;
     margin-left: 10rem;
 }
+
+
 
 .footer-divider{
     height: 2.5rem;
