@@ -148,14 +148,18 @@ a:active {
     display: flex;
     background-color: pink;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     flex-direction: row;
     justify-items: center;
     max-width: 100%;
 }
 
-.multiple-books{
+.first-multiple-books{
     margin-left: auto;
+}
+
+.second-multiple-books{
+    margin-right: auto;
 }
 
 .multiple-books > div{
@@ -166,8 +170,14 @@ a:active {
 
 .main-book-style{
     max-width: fit-content;
-    margin-right: auto;
     text-align: center;
+}
+.first-main-book{
+    margin-right: auto;
+}
+
+.second-main-book{
+    margin-left: auto;
 }
 
 .main-book-style > h5 {
@@ -196,8 +206,15 @@ a:active {
     box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
 }
 
-.book-style{
+.first-book-style{
     margin-right: 2rem;
+}
+
+.second-book-style{
+    margin-left: 2rem;
+}
+
+.book-style{
     background-color: plum;
     text-align: center;
 }
