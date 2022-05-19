@@ -22,7 +22,7 @@
 
     .logo{
 
-        width: 50%;
+       min-width: 45%;
     }
 
     .mobile-invis {
@@ -34,6 +34,10 @@
         margin-right: auto;
         margin-left: auto;
 
+    }
+
+    .list-pages{
+        visibility: hidden;
     }
 }
 
@@ -67,6 +71,7 @@ a:active {
     background-color: cyan;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     height: 8.5rem;
+    width: 100%;
 }
 
 .logo{
@@ -176,6 +181,8 @@ a:active {
     display:none
 }
 
+/*HOME PAGE*/
+
 .storefront {
     display: block;
     margin-left: auto;
@@ -231,10 +238,7 @@ a:active {
     max-width: 100%;
 }
 
-.full-list{
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .first-multiple-books{
     margin-left: auto;
@@ -244,9 +248,7 @@ a:active {
     margin-right: auto;
 }
 
-.book-list{
-margin-right: auto;
-}
+
 
 .multiple-books > div{
     display: flex;
@@ -366,6 +368,54 @@ margin-right: auto;
 .events > :last-child{
     margin-left: 9rem;
 }
+
+/*ALL LISTINGS PAGE*/
+
+.full-list{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.book-list{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.book-list > div > article + article{
+    margin-left: 2rem;
+}
+
+
+.list-nav{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.list-nav-style{
+    text-decoration: underline;
+    font-size: 1rem;
+    color: #04604b;
+    font-family: "Kohinoor Bangla";
+}
+
+.breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.list-pages {
+    margin-left: 17rem;
+    margin-right: 24rem;
+}
+
+.filter{
+    margin-right: auto;
+}
+
+
+/*FOOTER*/
 
 .footer{
     height: 15rem;
