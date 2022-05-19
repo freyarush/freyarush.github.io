@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
 
+
+
 :root{
     font-size: 16px;
 }
@@ -25,7 +27,8 @@
     }
 }
 
-a:link { 
+
+li > a:link { 
     text-decoration: none;
     color: #04604b; 
 }
@@ -47,7 +50,7 @@ a:active {
     color: #04604b;
     font-family: "Kohinoor Bangla";
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .logo-section{
@@ -133,6 +136,36 @@ a:active {
     margin-right: auto;
 }
 
+/*this is for the mobile version?*/
+.dropdown-list {
+   /* display: none;*/
+    position: absolute;
+    
+    min-width: 25rem;
+    background-color: white;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    transform: scale(0);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dropdown-list > div > li{
+    font-size: 1.1rem;
+    margin: 1.5rem 1rem 1.5rem 1rem;
+
+}
+
+.dropdown-trigger:hover >.dropdown-list{
+    transform: scale(1);
+}
+
+
+/*  for hamburger, hides everything expect first child(in example this is the home and hamburger)*/
+.responsive > ul > li:not(:first-child) {
+    display:none
+}
+
 .storefront {
     display: block;
     margin-left: auto;
@@ -140,6 +173,7 @@ a:active {
     max-width: 60%;
     box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
 }
+
 
 .line-divider{
     height: 4.5rem;
@@ -198,6 +232,10 @@ a:active {
 
 .second-multiple-books{
     margin-right: auto;
+}
+
+.book-list{
+margin-right: auto;
 }
 
 .multiple-books > div{
@@ -304,7 +342,6 @@ a:active {
 
 
 .events{
-
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;

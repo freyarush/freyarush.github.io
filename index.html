@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="list.html">
-    <link rel="stylesheet" href="main.js">
+    <!--<script rel="stylesheet" href="main.js">-->
     <link rel="stylesheet" href="individual-listing.html">
     <link rel="stylesheet" href="cart.html">
     <link rel="stylesheet" href="checkout.html">
@@ -18,9 +18,27 @@
     <header>
 
         <div class="logo-section">
-            <nav class="navbar font-style">
+            <nav class="navbar font-style" Id="topnav">
                 <ul class="main-navbar">
-                    <li><a href="list.html">BOOKS</a></li>
+                    <li class="dropdown-trigger"><a href="list.html">BOOKS</a>
+                        <ul class="dropdown-list">
+                            <div>
+                                <li><a href="list.html">New Releases</a></li>
+                                <li><a href="list.html">Bestsellers</a></li>
+                                <li><a href="list.html">Education</a></li>
+                            </div>
+                            <div>
+                                <li><a href="list.html">Fiction</a></li>
+                                <li><a href="list.html">Non-Fiction</a></li>
+                                <li><a href="list.html">Crime</a></li>
+                            </div>
+                            <div>
+                                <li><a href="list.html">Politics</a></li>
+                                <li><a href="list.html">Travel</a></li>
+                                <li><a href="list.html">Cooking</a></li>
+                            </div>
+                        </ul>
+                    </li>
                     <li><a href="list.html">EVENTS</a></li>
                     <li><a href="list.html">SERVICES</a></li>
                     <li><a href="list.html">PARTNERS</a></li>
@@ -36,9 +54,10 @@
 
         <nav>
             <ul class="secondary-navbar">
+                <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
                 <li><a href="list.html"><img src="searchicon.svg" class="icon"></a></li>
                 <li><a href="list.html"><img src="profileicon.svg" class="icon"></a></li>
-                <li><a href="list.html"><img src="carticon.svg" class="icon"></a></li>
+                <li><a href="cart.html"><img src="carticon.svg" class="icon"></a></li>
             </ul>
         </nav>
 
