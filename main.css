@@ -277,7 +277,7 @@ margin-right: auto;
     color: #656565;
 }
 
-.main-book-style > img {
+.main-book-style > a > img {
     max-width: 14rem;
     box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
 }
@@ -316,12 +316,12 @@ margin-right: auto;
     color: #222222;
 }
 
-.book-style > img {
+.book-style > a >img {
     max-width: 6.5rem;
     box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
 }
 
-.main-book-style > div > img {
+.main-book-style > div > a > img {
     max-width: 14rem;
     box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
 }
