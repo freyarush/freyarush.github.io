@@ -190,13 +190,13 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     max-width: 60%;
-    box-shadow: 0 0.3rem 0.3rem rgb(212, 212, 212);
+    box-shadow: 0 0.3rem 0.3rem  rgb(212, 212, 212);
 }
 
 
 .line-divider{
     height: 4.5rem;
-    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    box-shadow: 0 0.5rem 0.3rem -0.3rem #E7EEEA;
     margin-left: auto;
     margin-right: auto;
     max-width: 70%;
@@ -435,6 +435,14 @@ a:active {
 
 .filter{
     margin-right: auto;
+}
+
+.list-nav-bottom{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgoldenrod;
 }
 
 
