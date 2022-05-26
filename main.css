@@ -6,32 +6,44 @@
     font-size: 16px;
 }
 
+
+
 @media (max-width: 60em){
     :root{
         font-size: 16px;
     }
 
-    .body{
-        overflow: hidden;
+    body{
+        background-color: palegoldenrod;
+        
     }
 
     .main-book-style{
         display: none;
     }
 
-    .main-navbar > li > a{
+    .main-navbar{
         background-color: black;
-        visibility: hidden;
+        height: 5rem;
+        /*display: none;*/
+    }
+
+    .logo-section{
+        height: 7rem;
     }
 
     .logo{
-
-       min-width: 45%;
+        min-width: 13rem;
+        bottom: 15rem;
     }
 
     .mobile-invis {
         display: none;
 
+    }
+
+    .mobile-visible{
+        transform: scale(1);
     }
 
     .multiple-books {
@@ -42,6 +54,10 @@
 
     .list-pages{
         visibility: hidden;
+    }
+
+    .button-section{
+        display: none;
     }
 
     .leftnav{
@@ -74,6 +90,10 @@ a:active {
     color: #80afa4;
 }
 
+.mobile-visible{
+    transform: scale(0);
+}
+
 .font-style{
     text-decoration: none;
     color: #04604b;
@@ -86,7 +106,7 @@ a:active {
     background-color: cyan;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     height: 8.5rem;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .logo{
@@ -104,18 +124,22 @@ a:active {
 
 .main-navbar{
     display: flex;
+    flex-wrap: wrap;
     /*background-color: white;*/
     background-color: orange;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
-    width: 100%;
+    /*width: 100%;*/
 
 }
+
+
 
 .main-navbar > li > a{
     display: block;
     margin-top: 3em;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
     font-size: 1.2rem;
+    height: fit-content;
 }
 
 .main-navbar > li + li {
@@ -234,6 +258,7 @@ a:active {
 
 .all-books{
     display: flex;
+    flex-wrap: wrap;
     background-color: pink;
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -553,6 +578,7 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .location-availability > div{
@@ -579,7 +605,16 @@ a:active {
     margin-right: 0.8rem;
 }
 
+/* CART */
 
+.cart-total{
+
+}
+
+.cart-image{
+
+
+}
 
 /*FOOTER*/
 
@@ -593,6 +628,7 @@ a:active {
 
 .footer-nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
 }

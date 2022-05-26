@@ -14,27 +14,46 @@
     <header>
 
         <div class="logo-section">
-            <nav class="navbar font-style">
+            <nav class="font-style" Id="topnav">
                 <ul class="main-navbar">
-                    <li><a href="list.html">BOOKS</a></li>
-                    <li><a href="list.html">EVENTS</a></li>
-                    <li><a href="list.html">SERVICES</a></li>
-                    <li><a href="list.html">PARTNERS</a></li>
-                    <li><a href="list.html">ABOUT</a></li>
-                    <li><a href="list.html">OUR VALUES</a></li>
+                    <li class="dropdown-trigger mobile-invis"><a href="list.html">BOOKS</a>
+                        <ul class="dropdown-list">
+                            <div>
+                                <li><a href="list.html">New Releases</a></li>
+                                <li><a href="list.html">Bestsellers</a></li>
+                                <li><a href="list.html">Education</a></li>
+                            </div>
+                            <div>
+                                <li><a href="list.html">Fiction</a></li>
+                                <li><a href="list.html">Non-Fiction</a></li>
+                                <li><a href="list.html">Crime</a></li>
+                            </div>
+                            <div>
+                                <li><a href="list.html">Politics</a></li>
+                                <li><a href="list.html">Travel</a></li>
+                                <li><a href="list.html">Cooking</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="mobile-invis"><a href="list.html">EVENTS</a></li>
+                    <li class="mobile-invis"><a href="list.html">SERVICES</a></li>
+                    <li class="mobile-invis"><a href="list.html">PARTNERS</a></li>
+                    <li class="mobile-invis"><a href="list.html">ABOUT</a></li>
+                    <li class="mobile-invis"><a href="list.html">OUR VALUES</a></li>
                 </ul>
             </nav>
 
             
         
-            <a href="index.html"><img src="greenlightlogo.svg" alt="greenlight bookstore logo" class="logo"></a>
+            <a href="index.html"><img src="./img/greenlightlogo.svg" alt="greenlight bookstore logo" class="logo"></a>
         </div>
 
         <nav>
             <ul class="secondary-navbar">
-                <li><a href="list.html"><img src="searchicon.svg" class="icon"></a></li>
-                <li><a href="list.html"><img src="profileicon.svg" class="icon"></a></li>
-                <li><a href="cart.html"><img src="carticon.svg" class="icon"></a></li>
+                <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
+                <li><a href="list.html"><img src="./img/searchicon.svg" class="icon"></a></li>
+                <li><a href="list.html"><img src="./img/profileicon.svg" class="icon"></a></li>
+                <li><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a></li>
             </ul>
         </nav>
 
@@ -54,13 +73,13 @@
 
         <section class="book-details">
             <div>
-                <img src="TheCandyHouse.jpeg" class="main-image">
+                <img src="./img/TheCandyHouse.jpeg" class="main-image">
             </div>
 
             <div class="book-text">
                 <h1>The Candy House</h1>
                 <h3>Jennifer Egan</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <p class="mobile-invis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                     n voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
@@ -73,10 +92,19 @@
             <div class="button-section">
                 <p>$29.99</p>
                 <a href="#" class="button-style-light">ADD TO CART</a>
-                <a href="#" class="button-style-dark">ADD TO WISHLIST</a>
+                <a href="#" class="button-style-dark mobile-invis">ADD TO WISHLIST</a>
             </div>
 
         </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+           laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           n voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+           cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. </p>
+
 
         <section>
             <div class="line-divider">
@@ -86,12 +114,12 @@
             <div class="location-availability">
 
                 <div>
-                    <img src="Green-Tick-PNG-Picture.png" class="available-image">
+                    <img src="./img/Green-Tick-PNG-Picture.png" class="available-image">
                     <p>Fort Greene: 686 Fulton Street, Brooklyn, NY</p>
                 </div>
 
                 <div>
-                    <img src="greycross.png" class="available-image">
+                    <img src="./img/greycross.png" class="available-image">
                     <p>Flatbush: 632 Flatbush Avenue, Brooklyn, NY</p>
                 </div>
 
@@ -109,7 +137,7 @@
                     <div>
                     
                         <article class="book-style">
-                            <a href="individual-listing.html"><img src="TheCandyHouse.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/TheCandyHouse.jpeg"></a>
                             <h5>The Candy House</h5>
                             <p>Jennifer Egan</p>
                                 <div>                                <p>$32.99</p>
@@ -117,7 +145,7 @@
                             </div>
                         </article>
                         <article class="book-style">
-                             <a href="individual-listing.html"><img src="FrenchBraid.jpeg"></a>
+                             <a href="individual-listing.html"><img src="./img/FrenchBraid.jpeg"></a>
                             <h5>French Braid</h5>                            <p>Anne Tyler</p>
                             <div>
                                 <p>$29.99</p>
@@ -125,7 +153,7 @@
                             </div>
                         </article>
                         <article class="book-style">
-                            <a href="individual-listing.html"><img src="WomanEating.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/WomanEating.jpeg"></a>
                             <h5>Woman, Eating</h5>
                             <p>Claire Kohda</p>
                             <div>
@@ -136,7 +164,7 @@
     
                         
                         <article class="book-style mobile-invis">
-                            <a href="individual-listing.html"><img src="Metronome.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/Metronome.jpeg"></a>
                             <h5>Metronome</h5>
                             <p>Tom Watson</p>
                             <div>
@@ -145,7 +173,7 @@
                             </div>
                         </article>
                         <article class="book-style mobile-invis">
-                            <a href="individual-listing.html"><img src="ASolitary.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/ASolitary.jpeg"></a>
                             <h5>A Solitary Walk<br> On The Moon</h5>
                             <p>Hilde Hinton</p>
                             <div>
@@ -154,7 +182,7 @@
                             </div>
                         </article>
                         <article class="book-style mobile-invis">
-                            <a href="individual-listing.html"><img src="Acanthus.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/Acanthus.jpeg"></a>
                             <h5>Acanthus</h5>
                             <p>Claire Potter</p>
                             <div>
@@ -163,7 +191,7 @@
                             </div>
                         </article>
                         <article class="book-style mobile-invis">
-                            <a href="individual-listing.html"><img src="Brother.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/Brother.jpeg"></a>
                             <h5>Brother Of The More<br>Famous Jack</h5>
                             <p>Barbara Tapido</p>
                             <div>
@@ -172,7 +200,7 @@
                             </div>
                         </article>
                         <article class="book-style mobile-invis">
-                            <a href="individual-listing.html"><img src="Paradais.jpeg"></a>
+                            <a href="individual-listing.html"><img src="./img/Paradais.jpeg"></a>
                             <h5>Paradias</h5>
                             <p>Fernanda Melchor</p>
                             <div>
@@ -210,9 +238,9 @@
         </div>
 
         <div class="media-icons">
-            <a href="#"><img src="facebooklogo.png" alt="facebook logo" class="facebook"></a>
-            <a href="#"><img src="instalogo.png" alt="instagram logo" class="instagram"></a>
-            <a href="#"><img src="email.svg" alt="email icon" class="email"></a>
+            <a href="#"><img src="./img/facebooklogo.png" alt="facebook logo" class="facebook"></a>
+            <a href="#"><img src="./img/instalogo.png" alt="instagram logo" class="instagram"></a>
+            <a href="#"><img src="./img/email.svg" alt="email icon" class="email"></a>
 
         </div>
 
