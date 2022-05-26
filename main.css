@@ -11,6 +11,10 @@
         font-size: 16px;
     }
 
+    .body{
+        overflow: hidden;
+    }
+
     .main-book-style{
         display: none;
     }
@@ -40,7 +44,16 @@
         visibility: hidden;
     }
 
-    .
+    .leftnav{
+        margin-right: 2rem;
+        background-color: cyan;
+    }
+    
+    .rightnav{
+        margin-left: 2rem;
+        background-color: aquamarine;
+    }
+
 }
 
 
@@ -218,17 +231,6 @@ a:active {
     display: flex;
     flex-direction: row;
 }
-
-/*.white-border{
-    background-color: white;
-    max-width: 15%;
-    height: 100%;
-}
-
-.border{
-    display: flex;
-    justify-content: space-between;
-}*/
 
 .all-books{
     display: flex;
@@ -445,6 +447,139 @@ a:active {
     background-color: darkgoldenrod;
 }
 
+.list-row{
+   
+}
+
+
+/*INDIVIDUAL LISTINGS PAGE*/
+
+.individual-breadcrumbs{
+    margin-top: 3rem;
+}
+
+.book-details{
+    display: flex;
+    justify-content: center;
+    background-color: forestgreen;
+}
+
+.main-image{
+    max-width: 18rem;
+}
+
+.book-text{
+    background-color: beige;
+    max-width: 38%;
+    margin-left: 4rem;
+    margin-right: 4rem
+}
+
+.book-text > h1{
+    font-size: 1.9rem;
+    color: #222222;
+    font-family: "Kohinoor Bangla";
+    font-weight: 500;
+}
+
+.book-text > h3{
+    font-size: 1.7rem;
+    color: #A7A7A7;
+    margin-bottom: 3rem;
+    font-family: 'PT Serif', serif;
+}
+
+.book-text > p{
+    font-size: 1.2rem;
+    color: #333333;
+    font-family: 'PT Serif', serif;
+    line-height: 1.5rem;
+}
+
+.button-section{
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.1rem 0.5rem 2.1rem 0.5rem;
+    height: fit-content;
+    box-shadow: inset -0.2rem 0.2rem 0.3rem #E7EEEA;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.button-section > p{
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1.8rem;
+    text-align: center;
+    font-family: "Kohinoor Bangla";
+}
+
+.button-section > :nth-child(2){
+    margin-bottom: 1rem;
+
+}
+
+.button-style-light{
+    background-color: #C4DAD4;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    border-width: 1rem;
+    border-radius: 0.2rem;
+    border-color: #B4CFC9;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    font-family: "Kohinoor Bangla";
+    text-decoration: none;
+    text-align: center;
+    color: #04604B;
+}
+
+.button-style-dark{
+    background-color: #80AFA4;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    border-width: 1rem;
+    border-radius: 0.2rem;
+    border-color: #7DADA1;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    font-family: "Kohinoor Bangla";
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.location-availability{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.location-availability > div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+
+}
+
+.location-availability > div >:last-child{
+    font-size: 1.2rem;
+    color: #333333;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+
+}
+
+.location-availability >:last-child >:last-child{
+    color: #A7A7A7;
+}
+
+.available-image{
+    max-width: 1.2rem;
+    margin-right: 0.8rem;
+}
+
+
 
 /*FOOTER*/
 
@@ -470,12 +605,14 @@ a:active {
     text-align: left;
     margin-top: 2rem;
     margin-right: 10rem;
+    background-color: purple;
 }
 
 .rightnav{
     text-align: right;
     margin-top: 2rem;
     margin-left: 10rem;
+    background-color: beige;
 }
 
 

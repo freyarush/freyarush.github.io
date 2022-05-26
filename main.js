@@ -2,7 +2,7 @@
   
 
   //function toggleResponsive() {
-    //var navbar = document.getElementByID("myTopnav");
+    //var navbar = document.getElementByID("topnav");
   // navbar.classlist.toggle("responsive)")
  // }
 
