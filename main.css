@@ -6,7 +6,13 @@
     font-size: 16px;
 }
 
+@media (min-width: 60em){
+    
+    .mobile-visible{
+        display: none;
+    }
 
+}
 
 @media (max-width: 60em){
     :root{
@@ -28,14 +34,42 @@
         /*display: none;*/
     }
 
-    .logo-section{
-        height: 7rem;
+    .logo-section > nav{
+        
     }
 
+
     .logo{
-        min-width: 13rem;
+        min-width: 10rem;
         bottom: 15rem;
     }
+
+    .secondary-navbar > :first-child > a{
+        background-color: red;
+        position: absolute;
+        right: 12.5rem;
+        bottom: 6rem;
+        
+    }
+
+    .secondary-navbar > :nth-child(2){
+        background-color: purple;
+        position: absolute;
+        left: 9.5rem;
+        bottom: 6rem;
+    }
+
+    .secondary-navbar > :nth-child(4){
+        background-color: purple;
+        position: absolute;
+        left: 12.5rem;
+        bottom: 6rem;
+    }
+
+    /*.secondary-navbar{
+        height: 0rem;
+    }*/
+
 
     .mobile-invis {
         display: none;
@@ -43,14 +77,17 @@
     }
 
     .mobile-visible{
-        transform: scale(1);
+        visibility: visible;
     }
+
 
     .multiple-books {
         margin-right: auto;
         margin-left: auto;
 
     }
+
+
 
     .list-pages{
         visibility: hidden;
@@ -88,10 +125,6 @@ a:hover {
 a:active { 
     text-decoration: none; 
     color: #80afa4;
-}
-
-.mobile-visible{
-    transform: scale(0);
 }
 
 .font-style{
@@ -160,7 +193,7 @@ a:active {
 
 .secondary-navbar{
     display: flex;
-    height: 3rem;
+    height: 2rem;
     width: 10rem;
     /*background-color: white;*/
     background-color: royalblue;
@@ -171,7 +204,7 @@ a:active {
 }
 
 .icon{
-    width: 1.7em;
+    width: 1.7rem;
     margin-left: auto;
     background-color: white;
     
@@ -179,6 +212,7 @@ a:active {
 
 .secondary-navbar > li + li {
     margin-left: 1.5rem;
+    background-color: red;
     
 }
 
@@ -220,13 +254,14 @@ a:active {
     display:none
 }
 
-/*HOME PAGE*/
+/*------------HOME PAGE------------*/
 
 .storefront {
     display: block;
+    width: 50vw;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
     box-shadow: 0 0.3rem 0.3rem  rgb(212, 212, 212);
 }
 
@@ -398,7 +433,7 @@ a:active {
     margin-left: 9rem;
 }
 
-/*ALL LISTINGS PAGE*/
+/*------------ALL LISTINGS PAGE------------*/
 
 .full-list{
     margin-right: auto;
@@ -477,7 +512,7 @@ a:active {
 }
 
 
-/*INDIVIDUAL LISTINGS PAGE*/
+/*------------INDIVIDUAL LISTINGS PAGE------------*/
 
 .individual-breadcrumbs{
     margin-top: 3rem;
@@ -605,7 +640,7 @@ a:active {
     margin-right: 0.8rem;
 }
 
-/* CART */
+/*------------CART------------*/
 
 .cart-total{
 
@@ -616,7 +651,7 @@ a:active {
 
 }
 
-/*FOOTER*/
+/*------------FOOTER------------*/
 
 .footer{
     height: 15rem;

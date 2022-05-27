@@ -52,21 +52,34 @@
             <a href="index.html"><img src="./img/greenlightlogo.svg" alt="greenlight bookstore logo" class="logo"></a>
         </div>
 
+
         <nav>
             <ul class="secondary-navbar">
                 <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
-                <li><a href="list.html"><img src="./img/searchicon.svg" class="icon"></a></li>
-                <li><a href="list.html"><img src="./img/profileicon.svg" class="icon"></a></li>
+                <li><a href="#"><img src="./img/hamburger.svg" class="icon mobile-visible"></a></li>
+                <li><a href="#"><img src="./img/searchicon.svg" class="icon"></a></li>
+                <li><a href="list.html"><img src="./img/profileicon.svg" class="icon mobile-invis"></a></li>
                 <li><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a></li>
             </ul>
         </nav>
+
+        
 
         
     </header>
 
     <main class="content">
 
-        <img src="./img/greenlightimage.svg" alt="storefront of greenlight bookstore" class="storefront">
+        <picture>
+            <source media="(max-width: 960px)" src="./img/storefront-mobile.png" class="storefront">
+            <img src="./img/greenlight-storefront.png" alt="storefront of greenlight bookstore" class="storefront">
+        </picture>
+
+        <!--<img srcset="./img/storefront-mobile.png 600w,
+         ./img/greenlight-storefront.png 1920w" 
+        sizes="(max-width: 480px) 90vw, (max-width: 960px) 50vw" 
+        src="./img/greenlight-storefront.png" 
+        alt="storefront of greenlight bookstore" class="storefront">-->
 
         
 
