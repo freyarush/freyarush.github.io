@@ -6,153 +6,7 @@
     font-size: 16px;
 }
 
-@media (min-width: 60em){
-    
-    .mobile-visible{
-        display: none;
-    }
 
-}
-
-@media (max-width: 60em){
-    :root{
-        font-size: 16px;
-
-    }
-
-    body{
-        background-color: palegoldenrod;
-        
-    }
-
-    .mobile-invis {
-        display: none;
-
-    }
-
-    .main-book-style{
-        display: none;
-    }
-
-    .main-navbar{
-        background-color: black;
-        height: 5rem;
-        /*display: none;*/
-    }
-
-
-    .logo{
-        min-width: 10rem;
-        bottom: 15rem;
-    }
-
-    .secondary-navbar > :first-child > a{
-        background-color: red;
-        position: absolute;
-        right: 12.5rem;
-        bottom: 6rem;
-        
-    }
-
-    .secondary-navbar > :nth-child(2){
-        background-color: purple;
-        position: absolute;
-        left: 9.5rem;
-        bottom: 6rem;
-    }
-
-    .secondary-navbar > :nth-child(4){
-        background-color: purple;
-        position: absolute;
-        left: 12.5rem;
-        bottom: 6rem;
-    }
-
-    .multiple-books {
-        margin-right: auto;
-        margin-left: auto;
-
-    }
-
-    .list-pages{
-        visibility: hidden;
-    }
-
-    .button-section{
-        display: none;
-    }
-
-    .leftnav{
-        margin-right: 2rem;
-        background-color: cyan;
-    }
-    
-    .rightnav{
-        margin-left: 2rem;
-        background-color: aquamarine;
-    }
-
-    .book-details{
-        display: flex;
-        justify-content: center;
-        background-color: forestgreen;
-    }
-
-    .main-image{
-        width: 40vw;
-    }
-
-    .book-text > h1{
-        background-color: red;
-        font-size: 0.1em;
-    }
-
-    .book-text > h3{
-        background-color: blueviolet;
-        font-size: 0.1em;
-    }
-
-    .book-text > p{
-        position: absolute;
-        top: 50rem;
-        right: 5rem;
-        width: 80vw;
-
-    }
-
-    .availability{
-        margin-top: 30rem;
-    }
-
-    .button-section{
-        position: absolute;
-        top: 35rem;
-        right: 2rem;
-        width: 30vw;
-
-    }
-
-    /*CART*/
-
-    .cart-info{
-        background-color: paleturquoise;
-        margin: 0.5rem 6rem 0.5rem 0.5rem;
-    }
-
-    .all-cart-items{
-        margin-left: auto;
-        margin-right: 1rem;
-        box-shadow: 0 0.3rem 0.3rem #E7EEEA;
-        }
-        
-    .cart-listing{
-        width: fit-content;
-        margin: 2rem 2rem 2rem 2rem;
-        box-shadow: 0 0.3rem 0.3rem #E7EEEA;
-    }
-
-
-}
 
 
 li > a:link { 
@@ -823,17 +677,84 @@ a:active {
 
 .logo-section-no-nav{
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
-    height: 6.5rem;
+    height: 4.5rem;
+    margin-bottom: 4rem;
 }
 
 .logo-no-nav{
+    background-color: white;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
-    max-width: 15rem;
+    max-width: 15%;
     position: relative;
-    top: 4rem;
-    left: 10rem;
+    top: 2rem;
+
+}
+
+.order-summary{
+    width: 32rem;
+    margin: 4rem auto 7rem auto;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #DDE9E6;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+}
+
+.bought-items{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1.2rem auto 1.2rem auto;
+}
+
+.bought-items > div > h1{
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.bought-items > div > h3{
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+.bought-items > div > p{
+    font-family: "Kohinoor Bangla";
+    font-size: 0.8rem;
+    color: #222222;
+    margin-top: 5.5rem;
+    text-align: right;
+}
+
+.bought-items > div{
+    margin: 1rem auto 1rem 8rem;
+    min-width: 8rem;
+]
+}
+
+.bought-items > img {
+    margin: 1rem 0rem 1rem auto;
+}
+
+.price-summary{
+    border-style: solid none none none;
+    border-width: 0.1rem;
+    border-color: #DDE9E6;
+    padding: 1rem 10rem 1rem 10rem;
+}
+
+.small-divider{
+    height: 2rem;
+}
+
+
+
+.small-heading{
+    text-align: center;
+    font-size: 1rem;
+    background-color: white;
+    position: relative;
+    top: 1.5rem;
 }
 
 /*------------FOOTER------------*/
@@ -861,14 +782,12 @@ a:active {
     text-align: left;
     margin-top: 2rem;
     margin-right: 10rem;
-    background-color: purple;
 }
 
 .rightnav{
     text-align: right;
     margin-top: 2rem;
     margin-left: 10rem;
-    background-color: beige;
 }
 
 
@@ -926,5 +845,202 @@ a:active {
 
 .button:hover{
 filter:brightness(85%);
+
+}
+
+/*----------------------MEDIA QUERIES----------------------*/
+
+@media (min-width: 60em){
+    
+    .mobile-visible{
+        display: none;
+    }
+
+}
+
+@media (max-width: 60em){
+    :root{
+        font-size: 16px;
+
+    }
+
+    body{
+        background-color: palegoldenrod;
+        
+    }
+
+    .mobile-invis {
+        display: none;
+
+    }
+
+    .line-divider{
+        height: 4.5rem;
+        box-shadow: 0 0.5rem 0.3rem -0.3rem #E7EEEA;
+        max-width: 100vw;
+    }
+
+    .secondary-navbar{
+        position: relative;
+        height: 0.1rem;
+        top: 0.1rem;
+    }
+    
+
+    .logo-section{
+        box-shadow: none;
+        height: 6.5rem;
+    }
+
+    .main-book-style{
+        display: none;
+    }
+
+    .main-navbar{
+        height: 5rem;
+        /*display: none;*/
+    }
+
+    .logo{
+        min-width: 10rem;
+        bottom: 3rem;
+    }
+
+    .logo-no-nav{
+        min-width: 10rem;
+    }
+
+    .secondary-navbar > :first-child > a{
+        background-color: red;
+        position: absolute;
+        right: 12.5rem;
+        bottom: 2.5rem;
+        
+    }
+
+    .secondary-navbar > :nth-child(2){
+        background-color: purple;
+        position: absolute;
+        left: 9.5rem;
+        bottom: 2.5rem;
+    }
+
+    .secondary-navbar > :nth-child(4){
+        background-color: purple;
+        position: absolute;
+        left: 12.5rem;
+        bottom: 2.5rem;
+    }
+
+    .multiple-books {
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .list-pages{
+        visibility: hidden;
+    }
+
+    .button-section{
+        display: none;
+    }
+
+    .leftnav{
+        margin-right: 2rem;
+        background-color: cyan;
+    }
+    
+    .rightnav{
+        margin-left: 2rem;
+        background-color: aquamarine;
+    }
+
+    .book-details{
+        display: flex;
+        justify-content: center;
+        background-color: forestgreen;
+    }
+
+    .main-image{
+        width: 40vw;
+    }
+
+    .book-text > h1{
+        background-color: red;
+        font-size: 0.1em;
+    }
+
+    .book-text > h3{
+        background-color: blueviolet;
+        font-size: 0.1em;
+    }
+
+    .book-text > p{
+        position: absolute;
+        top: 50rem;
+        right: 5rem;
+        width: 80vw;
+
+    }
+
+    .availability{
+        margin-top: 30rem;
+    }
+
+    .button-section{
+        position: absolute;
+        top: 35rem;
+        right: 2rem;
+        width: 30vw;
+
+    }
+
+    /*CART*/
+
+    .cart-image{
+        margin: 0.8rem .2rem 0.8em 0.2rem;
+        max-width: 6rem;
+    }
+
+    .cart-info{
+        background-color: paleturquoise;
+        margin: 0.5rem 3rem 0.5rem 0.5rem;
+    }
+
+    .all-cart-items{
+        width: 22rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    }
+        
+    .cart-listing{
+        width: fit-content;
+        margin: 2rem auto 2rem auto;
+        box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    }
+
+    .order-summary{
+        background-color: pink;
+        width: 16rem;
+        margin: 4rem auto 7rem auto;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: #DDE9E6;
+        box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    }
+
+    .cart-buttons{
+        margin-left: auto;
+    }
+
+    .bought-items > div{
+        margin-left: 0.1rem;
+    }
+    
+    .price-summary{
+        padding: 1rem 1rem 1rem 1rem;
+    }
 
 }
