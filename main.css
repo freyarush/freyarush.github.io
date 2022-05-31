@@ -87,8 +87,6 @@
 
     }
 
-
-
     .list-pages{
         visibility: hidden;
     }
@@ -106,6 +104,47 @@
         margin-left: 2rem;
         background-color: aquamarine;
     }
+
+    .book-details{
+        display: flex;
+        justify-content: center;
+        background-color: forestgreen;
+    }
+
+    .main-image{
+        width: 40vw;
+    }
+
+    .book-text > h1{
+        background-color: red;
+        font-size: 0.1em;
+    }
+
+    .book-text > h3{
+        background-color: blueviolet;
+        font-size: 0.1em;
+    }
+
+    .book-text > p{
+        position: absolute;
+        top: 50rem;
+        right: 5rem;
+        width: 80vw;
+
+    }
+
+    .availability{
+        margin-top: 30rem;
+    }
+
+    .button-section{
+        position: absolute;
+        top: 35rem;
+        right: 2rem;
+        width: 30vw;
+
+    }
+
 
 }
 
@@ -642,14 +681,71 @@ a:active {
 
 /*------------CART------------*/
 
-.cart-total{
+.cart{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.all-cart-items{
+background-color: powderblue;
+
+width: 32rem;
+margin-left: auto;
+margin-right: 1rem;
+
+}
+
+.cart-listing{
+    background-color: peachpuff;
+    display: flex;
+    width: fit-content;
+    margin: 2rem auto 0rem auto;
+}
+
+.cart-info{
+    background-color: plum;
+    padding: 0.5rem 13rem 0.5rem 0.5rem;
+}
+
+.cart-listing > :last-child{
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.cart-listing > div > a > img{
+    width: 1rem;
 
 }
 
 .cart-image{
-
+    width: 6rem;
 
 }
+
+.item-amount{
+    display: flex;
+    margin-top: 5rem;
+
+}
+
+.cart-buttons{
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.1rem 0.5rem 2.1rem 0.5rem;
+    height: fit-content;
+    border-width: 0.2rem;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    width: 15rem;
+    margin-right: auto;
+}
+
+.cart-total{
+
+}
+
 
 /*------------FOOTER------------*/
 
