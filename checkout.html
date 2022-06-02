@@ -79,7 +79,27 @@
                         <h2 class="font-style heading small-heading">PAYMENT DETAILS</h2>
                     </div>
 
+                    <div class="payment-options border">
 
+                        
+                        <input type="checkbox" id="creditcard">
+                        <label class="label" for="creditcard">Credit Card</label>
+                            <div class="card-info input-text">
+                                <input class="border" type="text" id="cardnumber" placeholder="credit card number">  
+                                <input class="border" type="text" id="expiration" placeholder="expiration">  
+                            </div>
+
+                            <div class="card-info input-text">
+                                <input class="border" type="text" id="cardname" placeholder="name on card">  
+                                <input class="border" type="text" id="cvv" placeholder="CVV">  
+                            </div>
+
+                        <div class="border">
+                            <input type="checkbox" id="paypal">
+                            <label class="label" for="paypal">Paypal</label>
+                        </div>
+
+                    </div>
                     
                 </div>
             </section>
@@ -115,7 +135,10 @@
         </div>
         
 
-      <a href="checkout-complete.html">complete</a>
+        <div class="line-divider double-heading">
+            <a href="list.html" class="button-style-light">CONTINUE SHOPPING</a>
+            <a href="checkout-complete.html" class="button-style-dark">CONFIRM PAYMENT</a>      
+        </div>
         
     
 
