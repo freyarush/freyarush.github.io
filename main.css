@@ -695,6 +695,25 @@ a:active {
 
 /*------------------CHECKOUT------------------*/
 
+input{
+    font-family: 'PT Serif', serif;
+    font-size: 0.8rem;
+    color: #04604b;
+}
+
+::placeholder{
+    color: #93BAB1;;
+}
+
+.label{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    color: #93BAB1;;
+    margin-left: 15%;
+    margin-top: 1rem;
+
+}
+
 .all-content{
     display: flex;
     flex-wrap: wrap;
@@ -708,16 +727,16 @@ a:active {
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
 }
 
-.checkout-section > section > div > h2{
-    margin-right: 60%;
+.checkout-divider{
+    height: 2rem;
+    box-shadow: 0 0.5rem 0.3rem -0.3rem #E7EEEA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-.checkout-section > section{
-
-}
-
-.checkout-section > section > div{
-    
+.checkout-section > div > div > h2{
+    margin-left: 8%;
 }
 
 .input-text{
@@ -727,8 +746,9 @@ a:active {
 
 .input-text > input {
     width: 80%;
-    margin: 1rem 5% 1rem 15%;
-    
+    margin: 0.1rem 5% 1rem 15%;
+    height: 1.8rem;
+    box-shadow: inset 0 0.1rem 0.2rem #E7EEEA;
 }
 
 .order-summary-checkout{
