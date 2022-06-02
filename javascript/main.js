@@ -10,7 +10,7 @@
 var hamburger = document.getElementsByClassName("hamburger");
 var mobileMenuItem = document.getElementsByClassName("mobile-menu-item");*/
 
-/*function triggerVisibility() {
+function triggerVisibility() {
   var menu = document.getElementsByClassName("mobile-menu");
 
   if (menu.style.display == "none"){ 
@@ -21,7 +21,7 @@ var mobileMenuItem = document.getElementsByClassName("mobile-menu-item");*/
 
 }
 
-hamburger.addEventListener("click", triggerVisibility);*/
+hamburger.addEventListener("click", triggerVisibility);
 
 /*if (document.getElementsByClassName("hamburger").clicked == true){
   mobileMenuItem.style.display = "block";

@@ -23,6 +23,7 @@ a:active {
     color: #80afa4;
 }
 
+
 .font-style{
     text-decoration: none;
     color: #04604b;
@@ -41,6 +42,12 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     height: fit-content;
+}
+
+.border{
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #DDE9E6;
 }
 
 
@@ -579,9 +586,6 @@ a:active {
     width: 32rem;
     margin-left: auto;
     margin-right: 1rem;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #DDE9E6;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
 }
 
@@ -589,9 +593,6 @@ a:active {
     display: flex;
     max-width: fit-content;
     margin: 2rem auto 2rem auto;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #EFF4F2;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
 }
 
@@ -667,9 +668,6 @@ a:active {
     justify-content: center;
     padding: 2.1rem 0.5rem 2.1rem 0.5rem;
     height: fit-content;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #DDE9E6;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     width: 15rem;
     margin-right: auto;
@@ -695,6 +693,68 @@ a:active {
     color: #04604b;
 }
 
+/*------------------CHECKOUT------------------*/
+
+.all-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+.checkout-section{
+    width: 40vw;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+}
+
+.checkout-section > section > div > h2{
+    margin-right: 60%;
+}
+
+.checkout-section > section{
+
+}
+
+.checkout-section > section > div{
+    
+}
+
+.input-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text > input {
+    width: 80%;
+    margin: 1rem 5% 1rem 15%;
+    
+}
+
+.order-summary-checkout{
+    width: 16rem;
+    margin: 0rem auto 7rem 2rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #DDE9E6;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+}
+
+.bought-items > div{
+    margin: 1rem auto 1rem 1rem;
+    min-width: 4rem;
+    
+}
+
+.order-summary-checkout > :last-child{
+    border-style: solid none none none;
+    border-width: 0.1rem;
+    border-color: #DDE9E6;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+
 /*--------------CHECKOUT COMPLETE--------------*/
 
 .logo-section-no-nav{
@@ -717,9 +777,6 @@ a:active {
 .order-summary{
     width: 32rem;
     margin: 4rem auto 7rem auto;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #DDE9E6;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
 }
 
@@ -733,6 +790,8 @@ a:active {
 .bought-items > div > h1{
     font-size: 0.8rem;
     text-align: right;
+    font-family: "Kohinoor Bangla";
+    color: #222222;
 }
 
 .bought-items > div > h3{
@@ -748,10 +807,9 @@ a:active {
     text-align: right;
 }
 
-.bought-items > div{
+.cart-info{
     margin: 1rem auto 1rem 8rem;
     min-width: 8rem;
-]
 }
 
 .bought-items > img {
@@ -767,6 +825,7 @@ a:active {
 
 .small-divider{
     height: 2rem;
+    width: 100%;
 }
 
 
@@ -1078,6 +1137,12 @@ filter:brightness(85%);
     
     .price-summary{
         padding: 1rem 1rem 1rem 1rem;
+    }
+
+    /* checkout*/
+
+    .checkout-section{
+        width: 100vw;
     }
 
 }
