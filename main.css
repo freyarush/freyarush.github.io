@@ -597,7 +597,8 @@ a:active {
 }
 
 .cart-info{
-    margin: 0.5rem 11rem 0.5rem 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    width: fit-content;
 }
 
 .cart-info > h1{
@@ -691,6 +692,7 @@ a:active {
     font-family: "Kohinoor Bangla";
     font-size: 1.1rem;
     color: #04604b;
+
 }
 
 /*------------------CHECKOUT------------------*/
@@ -786,13 +788,7 @@ input{
 
 }
 
-#creditcard:checked{
-}
 
-#creditcard{
-    margin-top: 1rem;
-    margin-right; 0.5rem
-}
 
 .card-info > :first-child{
     width: 70%;
@@ -804,6 +800,30 @@ input{
 
 .card-info > input {
     margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.checkout-buttons{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.checkout-buttons > a{
+    position: relative;
+    top: 3rem;
+    height: 1rem
+}
+
+.checkout-buttons > :first-child{
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.checkout-buttons > :last-child{
+    margin-right: auto;
+    margin-left: 3rem;
 }
 
 
@@ -1005,14 +1025,12 @@ filter:brightness(85%);
 
     }
 
-    body{
-        background-color: palegoldenrod;
-        
-    }
-
     .mobile-invis {
         display: none;
+    }
 
+    .border-invis{
+        border-style: none;
     }
 
     .line-divider{
@@ -1197,5 +1215,23 @@ filter:brightness(85%);
     .checkout-section{
         width: 100vw;
     }
+
+    .checkout-buttons{
+        margin-top: 1rem;
+      }
+      
+      .checkout-buttons > a{
+          position: relative;
+          top: 0rem;
+          height: 1rem;
+      }
+      
+      .checkout-buttons > :first-child{
+        margin: 1rem auto 1rem auto;
+      }
+      
+      .checkout-buttons > :last-child{
+        margin: 1rem auto 1rem auto;
+      }
 
 }
