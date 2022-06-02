@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="list.html">
-    <!--<script rel="stylesheet" href="main.js">-->
     <link rel="stylesheet" href="individual-listing.html">
     <link rel="stylesheet" href="cart.html">
     <link rel="stylesheet" href="checkout.html">
+
 </head>
 <body>
     
+
     <header>
 
         <div class="logo-section">
@@ -56,10 +57,50 @@
         <nav>
             <ul class="secondary-navbar">
                 <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
-                <li><a href="#"><img src="./img/hamburger.svg" class="icon mobile-visible"></a></li>
+                <li><a href="#" class="hamburger"><img src="./img/hamburger.svg" class="icon mobile-visible"></a>
+                    
+                </li>
                 <li><a href="#"><img src="./img/searchicon.svg" class="icon"></a></li>
                 <li><a href="list.html"><img src="./img/profileicon.svg" class="icon mobile-invis"></a></li>
                 <li><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a></li>
+            </ul>
+
+            <ul class="mobile-menu"> <!--onclick="triggerVisibility()"-->
+                <li>
+                    <div class="line-divider">
+                        <h2 class="font-style heading">X</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">BOOKS</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">EVENTS</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">ABOUT</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">SERVICES</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">PARTNERS</h2>              
+                    </div>
+                </li>
+                <li>
+                    <div class="line-divider mobile-menu-item">
+                        <h2 class="font-style heading">OUR VALUES</h2>              
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -357,6 +398,9 @@
         </div>
 
     </footer>
+
+
+    <script src="./javascript/main.js"></script>
 
 </body>
 </html>

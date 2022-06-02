@@ -6,9 +6,6 @@
     font-size: 16px;
 }
 
-
-
-
 li > a:link { 
     text-decoration: none;
     color: #04604b; 
@@ -33,6 +30,19 @@ a:active {
     font-weight: 500;
     font-size: 1em;
 }
+
+.heading{
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: white;
+    position: relative;
+    top: 4rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
 
 .button-style-dark:hover{
         text-decoration: none; 
@@ -128,11 +138,8 @@ a:active {
     margin-right: auto;
 }
 
-/*this is for the mobile version?*/
 .dropdown-list {
-   /* display: none;*/
-    position: absolute;
-    
+    position: absolute;  
     min-width: 25rem;
     background-color: white;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
@@ -152,10 +159,31 @@ a:active {
     transform: scale(1);
 }
 
+.mobile-menu{
+    display: none;
+    position: fixed;
+    right: 0rem;
+    left: 0rem;
+    top: 6.5rem;
+    background-color: white;
+    width: 100vw;
+    height: 90vh;
+    z-index: 100;
+    /*transform: translateX(-100%);
+    transition: transform 0.3s;*/
+}
 
-/*  for hamburger, hides everything expect first child(in example this is the home and hamburger)*/
-.responsive > ul > li:not(:first-child) {
-    display:none
+
+.mobile-menu > li > div > h2{
+    margin-left: 10%;
+}
+
+.mobile-menu > :first-child > div > h2{
+    margin-left: 90%;
+}
+
+.menuVisible{
+    transform: translateX(0);
 }
 
 /*------------HOME PAGE------------*/
@@ -178,17 +206,6 @@ a:active {
     max-width: 70%;
 }
 
-.heading{
-    text-align: center;
-    font-size: 1.2rem;
-    background-color: white;
-    position: relative;
-    top: 4rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    height: fit-content;
-}
 
 .double-heading{
     display: flex;
@@ -855,14 +872,21 @@ filter:brightness(85%);
 
 /*----------------------MEDIA QUERIES----------------------*/
 
+/* for desktop version*/
 @media (min-width: 60em){
     
     .mobile-visible{
         display: none;
     }
 
+    .mobile-menu{
+        display: none;
+    }
+
 }
 
+
+/* for mobile version*/
 @media (max-width: 60em){
     :root{
         font-size: 16px;
@@ -935,6 +959,14 @@ filter:brightness(85%);
         position: absolute;
         left: 12.5rem;
         bottom: 2.5rem;
+    }
+
+    .first-book-style{
+        margin-right: none;
+    }
+    
+    .second-book-style{
+        margin-left: none;
     }
 
     .multiple-books {
