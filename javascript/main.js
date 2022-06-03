@@ -1,4 +1,4 @@
-
+//document.body.innerHTML = "<p>it is linked</p>"
 
 
   //function toggleResponsive() {

@@ -56,16 +56,55 @@ a:active {
         color: #E7EEEA;
 }
 
+.search-bar{
+    position: absolute;
+    width: 100vw;
+    height: 10rem;
+    background-color: white;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    z-index: 99;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar > input{
+    width: 40%;
+    margin: auto 5% 0.5rem 5%;
+    height: 3rem;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #04604b;
+    font-family: "Kohinoor Bangla";
+}
+
+.search-bar > :first-child{
+    width: 3%;
+    margin: auto auto 0.5rem 20%;
+}
+
+.search-bar > :last-child{
+    width: 2%;
+    margin: auto 20% 0.5rem auto;
+}
+
+.search-bar > input > ::placeholder{
+    font-size: 2rem;
+    text-align: center;
+    color: #04604b;
+    font-family: "Kohinoor Bangla";
+}
+
+
 .logo-section{
-    background-color: cyan;
+
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     height: 8.5rem;
     /*width: 100%;*/
 }
 
 .logo{
-    /*background-color: white;*/
-    background-color: greenyellow;
+    background-color: white;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -79,8 +118,7 @@ a:active {
 .main-navbar{
     display: flex;
     flex-wrap: wrap;
-    /*background-color: white;*/
-    background-color: orange;
+    background-color: white;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     /*width: 100%;*/
 
@@ -91,7 +129,6 @@ a:active {
 .main-navbar > li > a{
     display: block;
     margin-top: 3em;
-    /*background-color: hotpink;*/
     font-size: 1.2rem;
     height: fit-content;
 }
@@ -116,8 +153,7 @@ a:active {
     display: flex;
     height: 2rem;
     width: 10rem;
-    /*background-color: white;*/
-    background-color: royalblue;
+    background-color: white;
     position: relative;
     bottom: 1rem;
     margin-left: auto;
@@ -133,7 +169,6 @@ a:active {
 
 .secondary-navbar > li + li {
     margin-left: 1.5rem;
-    background-color: red;
     
 }
 
@@ -165,6 +200,80 @@ a:active {
 .dropdown-trigger:hover >.dropdown-list{
     transform: scale(1);
 }
+
+.cart-dropdown{
+    position: absolute;  
+    width: 23rem;
+    background-color: white;
+    padding: 0rem 0rem 0.8rem 0.2rem;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    transform: scale(0);
+    height: 12rem;
+    z-index: 99;
+}
+
+.cart-dropdown > div > img{
+    margin: 0.8rem .2rem 0.8em 0.2rem;
+    width: 25%;
+}
+
+.cart-dropdown > div >:nth-child(2){
+    margin: 0.5rem 3rem 0.5rem 0.5rem;
+}
+
+.dropdown-buttons{
+    background-color: white;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.2rem 0.1rem 0.2rem 0.1rem;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    bottom: 2rem;
+    right: 0.2rem;
+}
+
+.dropdown-buttons > :first-child{
+    background-color: #C4DAD5;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    border-color: #AECCC4;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    font-family: "Kohinoor Bangla";
+    text-decoration: none;
+    text-align: center;
+    color: #04604B;
+    height: fit-content;
+    margin: 0.4rem 0.1rem 0.3rem auto;
+}
+
+.dropdown-buttons > :last-child{
+    background-color: #80AFA4;
+    font-size: 1rem;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    border-color: #7CACA1;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    font-family: "Kohinoor Bangla";
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    height: fit-content;
+    margin: 0.3rem auto 0.3rem 0.1rem;
+}
+
+
+.dropdown-trigger:hover >.cart-dropdown{
+    transform: scale(1);
+}
+
+
 
 .mobile-menu{
     display: none;
@@ -344,6 +453,16 @@ a:active {
     color: #A7A7A7;
 }
 
+.email {
+    min-width: 70%;
+    margin-bottom: 3rem;
+}
+
+.email > input{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 .events{
     display: flex;
@@ -597,8 +716,7 @@ a:active {
 }
 
 .cart-info{
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-    width: fit-content;
+    margin: 0.5rem 11rem 0.5rem 0.5rem;
 }
 
 .cart-info > h1{
@@ -635,7 +753,7 @@ a:active {
 
 .cart-image{
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-    max-width: 6rem;
+    width: 20%;
 }
 
 .item-amount{
@@ -664,12 +782,12 @@ a:active {
 
 .cart-buttons{
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2.1rem 0.5rem 2.1rem 0.5rem;
     height: fit-content;
-    box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     width: 15rem;
     margin-right: auto;
 }
@@ -703,7 +821,7 @@ input{
     color: #04604b;
 }
 
-::placeholder{
+.checkout-section > div > .input-text >::placeholder{
     color: #93BAB1;;
 }
 
@@ -1019,6 +1137,7 @@ filter:brightness(85%);
 
 
 /* for mobile version*/
+
 @media (max-width: 60em){
     :root{
         font-size: 16px;
@@ -1045,19 +1164,47 @@ filter:brightness(85%);
         top: 0.1rem;
     }
     
+    .search-bar{
+        width: 100vw;
+        height: 7rem;
+    }
+    
+    .search-bar > input{
+        width: 70%;
+        margin: auto 5% 0rem 5%;
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .search-bar > :first-child{
+        width: 5%;
+        margin: auto auto 0.5rem 5%;
+    }
+    
+    .search-bar > :last-child{
+        width: 4%;
+        margin: auto 5% 0.5rem auto;
+    }
 
     .logo-section{
         box-shadow: none;
         height: 6.5rem;
     }
 
-    .main-book-style{
+    .dropdown-trigger:hover >.cart-dropdown{
+        transform: scale(0);
+    }
+
+    .first-main-book{
+        display: none;
+    }
+
+    .second-main-book{
         display: none;
     }
 
     .main-navbar{
         height: 5rem;
-        /*display: none;*/
     }
 
     .logo{
@@ -1070,7 +1217,6 @@ filter:brightness(85%);
     }
 
     .secondary-navbar > :first-child > a{
-        background-color: red;
         position: absolute;
         right: 12.5rem;
         bottom: 2.5rem;
@@ -1078,14 +1224,12 @@ filter:brightness(85%);
     }
 
     .secondary-navbar > :nth-child(2){
-        background-color: purple;
         position: absolute;
         left: 9.5rem;
         bottom: 2.5rem;
     }
 
     .secondary-navbar > :nth-child(4){
-        background-color: purple;
         position: absolute;
         left: 12.5rem;
         bottom: 2.5rem;
@@ -1104,6 +1248,30 @@ filter:brightness(85%);
         margin-left: auto;
 
     }
+
+    .email {
+        min-width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .email > input{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .events > :first-child{
+        margin-right: 1rem;
+    }
+    
+    .events > :last-child{
+        margin-left: 1rem;
+    }
+
+    .events > div > a > img{
+        width: 40vw;
+    }
+
 
     .list-pages{
         visibility: hidden;
@@ -1130,7 +1298,7 @@ filter:brightness(85%);
     }
 
     .main-image{
-        width: 40vw;
+        width: 70vw;
     }
 
     .book-text > h1{
@@ -1167,7 +1335,7 @@ filter:brightness(85%);
 
     .cart-image{
         margin: 0.8rem .2rem 0.8em 0.2rem;
-        max-width: 6rem;
+        width: 30%;
     }
 
     .cart-info{

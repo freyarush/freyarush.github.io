@@ -18,6 +18,12 @@
 
     <header>
 
+        <div class="search-bar">
+            <img src="./img/searchicon.svg">
+            <input type="text" placeholder="SEARCH BOOKS HERE .search-input">
+            <img src="./img/cross.svg">
+        </div>
+
         <div class="logo-section">
             <nav class="font-style" Id="topnav">
                 <ul class="main-navbar">
@@ -57,12 +63,45 @@
         <nav>
             <ul class="secondary-navbar">
                 <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
-                <li><a href="#" class="hamburger"><img src="./img/hamburger.svg" class="icon mobile-visible"></a>
+                <li class="hamburger"><a href="#"><img src="./img/hamburger.svg" class="icon mobile-visible"></a>
                     
                 </li>
                 <li><a href="#"><img src="./img/searchicon.svg" class="icon"></a></li>
                 <li><a href="list.html"><img src="./img/profileicon.svg" class="icon mobile-invis"></a></li>
-                <li><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a></li>
+                <li class="dropdown-trigger"><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a>
+                    <div class="cart-dropdown border">
+                        <div class="cart-listing">
+                        
+                            <img src="./img/TheCandyHouse.jpeg" class="cart-image">
+                            
+                
+                            <div class="cart-info">
+                                <h1>The Candy House</h1>
+                                <h3>Jennifer Egan</h3>
+                
+                                <div class="item-amount">
+                                    <a href="#"><p>-</p></a>
+                                    <div>
+                                        <p>1</p>
+                                    </div>
+                                    <a href="#"><p>+</p></a>
+                                </div>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img src="./img/greycross.png"></a>
+                                <p>$29.99</p>
+        
+        
+                            </div>
+                        </div>
+
+                        <div class="dropdown-buttons border">
+                            <a href="#" class="border">CONTINUE SHOPPING</a>
+                            <a href="checkout.html" class="">CHECKOUT</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
             <ul class="mobile-menu"> <!--onclick="triggerVisibility()"-->
@@ -334,16 +373,17 @@
 
         </section>
 
-        <section>
-            <div class="line-divider">
-                <h2 class="font-style heading">SIGN UP FOR OUR NEWSLETTER</h2>              
-            </div>
+      
 
-            <div class="line-divider">
-                <input class="heading border" type="email" placeholder="example@email.com"> 
-              
-            </div>
-        </section>
+        <div class="line-divider">
+            <h2 class="font-style heading">SIGN UP FOR OUR NEWSLETTER</h2>              
+        </div>
+
+        <div class="line-divider email">
+           <input class="heading border" type="email" placeholder="example@email.com">       
+        </div>
+
+      
 
         <section>
             <div class="line-divider double-heading">
