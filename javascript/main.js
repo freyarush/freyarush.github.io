@@ -11,7 +11,12 @@ var hamburger = document.getElementsByClassName("hamburger");
 var mobileMenuItem = document.getElementsByClassName("mobile-menu-item");*/
 
 function searchBar(){
-  alert("it works");
+  var searchSection = document.getElementById("searchBar");
+  searchSection.classList.toggle("responsive");
+}
+
+  //document.getElementByID("search-bar").style.display = "flex";
+
   /*if (document.getElementByClassName("search-bar").style.display == "none";){
     alert("it works");
   } else{
@@ -28,7 +33,6 @@ function searchBar(){
     x.main.display = "none";
   }*/
 
-}
 
 /*var x = document.getElementID("search-bar");
 if (x.style.display === "none") {
