@@ -1172,10 +1172,8 @@ filter:brightness(85%);
     }
     
     .search-bar{
-        display: none;
         width: 100vw;
         height: 7rem;
-
     }
     
     .search-bar > input{
