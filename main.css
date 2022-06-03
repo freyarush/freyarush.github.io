@@ -57,13 +57,13 @@ a:active {
 }
 
 .search-bar{
+    display: none;
+    background-color: red;
     position: absolute;
     width: 100vw;
     height: 10rem;
-    background-color: white;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
     z-index: 99;
-    display: flex;
     flex-direction: row;
 }
 
@@ -1165,8 +1165,10 @@ filter:brightness(85%);
     }
     
     .search-bar{
+        display: none;
         width: 100vw;
         height: 7rem;
+
     }
     
     .search-bar > input{

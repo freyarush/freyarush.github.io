@@ -20,7 +20,7 @@
 
         <div class="search-bar">
             <img src="./img/searchicon.svg">
-            <input type="text" placeholder="SEARCH BOOKS HERE .search-input">
+            <input type="text" placeholder="SEARCH BOOKS HERE">
             <img src="./img/cross.svg">
         </div>
 
@@ -63,10 +63,10 @@
         <nav>
             <ul class="secondary-navbar">
                 <!--<li><a href="#java?" class="hamburger" >hamburger icon</a></li>-->
-                <li class="hamburger"><a href="#"><img src="./img/hamburger.svg" class="icon mobile-visible"></a>
+                <li onclick="triggerVisibility()" class="hamburger"><a href="#"><img src="./img/hamburger.svg" class="icon mobile-visible"></a>
                     
                 </li>
-                <li><a href="#"><img src="./img/searchicon.svg" class="icon"></a></li>
+                <li onclick="searchBar()"><a href="#"><img src="./img/searchicon.svg" class="icon"></a></li>
                 <li><a href="list.html"><img src="./img/profileicon.svg" class="icon mobile-invis"></a></li>
                 <li class="dropdown-trigger"><a href="cart.html"><img src="./img/carticon.svg" class="icon"></a>
                     <div class="cart-dropdown border">
