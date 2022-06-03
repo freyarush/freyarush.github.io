@@ -278,6 +278,7 @@ a:active {
 
 
 .mobile-menu{
+    flex-direction: column;
     display: none;
     position: fixed;
     right: 0rem;
