@@ -15,6 +15,20 @@ function searchBar(){
   searchSection.classList.toggle("responsive");
 }
 
+function triggerHamburger() {
+  var hamburgerMenu = document.getElementById("hamburger");
+  hamburgerMenu.classList.toggle("responsive");
+}
+  
+  /*var menu = document.getElementsByClassName("mobile-menu");
+
+  if (menu.style.display == "none"){ 
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }*/
+
+
   //document.getElementByID("search-bar").style.display = "flex";
 
   /*if (document.getElementByClassName("search-bar").style.display == "none";){
@@ -42,18 +56,6 @@ if (x.style.display === "none") {
 }
 
 search-icon.addEventListener("click", searchBar);*/
-
-function triggerVisibility() {
-  alert("it works");
-  /*var menu = document.getElementsByClassName("mobile-menu");
-
-  if (menu.style.display == "none"){ 
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }*/
-
-}
 
 
 /*if (document.getElementsByClassName("hamburger").clicked == true){
