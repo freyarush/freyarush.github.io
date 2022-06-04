@@ -566,12 +566,12 @@ a:active {
 
 .individual-breadcrumbs{
     margin-top: 3rem;
+    margin-left: 8vw;
 }
 
 .book-details{
     display: flex;
     justify-content: center;
-    background-color: forestgreen;
 }
 
 .main-image{
@@ -579,7 +579,6 @@ a:active {
 }
 
 .book-text{
-    background-color: beige;
     max-width: 38%;
     margin-left: 4rem;
     margin-right: 4rem
@@ -607,7 +606,6 @@ a:active {
 }
 
 .button-section{
-    background-color: paleturquoise;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1143,6 +1141,7 @@ filter:brightness(85%);
 }
 
 
+
 /* for mobile version*/
 
 @media (max-width: 60em){
@@ -1303,7 +1302,7 @@ filter:brightness(85%);
     .book-details{
         display: flex;
         justify-content: center;
-        background-color: forestgreen;
+        margin-top: 0.5rem;
     }
 
     .main-image{
@@ -1312,20 +1311,17 @@ filter:brightness(85%);
     }
 
     .book-text{
-        background-color: beige;
         margin-left: 12%;
         margin-right: 8%;
     }
 
     .book-text > h1{
-        background-color: red;
         font-size: 1.1em;
         min-width: fit-content;
         text-align: right;
     }
 
     .book-text > h3{
-        background-color: blueviolet;
         font-size: 1rem;
         text-align: right;
         margin-top: 0.2rem;
@@ -1335,7 +1331,7 @@ filter:brightness(85%);
         position: absolute;
         font-size: 0.9rem;
         line-height: 01rem;
-        top: 32rem;
+        top: 45rem;
         right: 5rem;
         width: 80vw;
         max-height: 20rem;
@@ -1344,15 +1340,27 @@ filter:brightness(85%);
     }
 
     .availability{
-        margin-top: 30rem;
+        margin-top: 15rem;
     }
 
-    .button-section{
-        position: absolute;
-        top: 5rem;
-        right: 2rem;
-        width: 30vw;
+    .location-availability > div >:last-child{
+        font-size: 1rem;
+    
+    }
+    
 
+    .mobile-button-section > p {
+        color: #A7A7A7;
+        font-size: 1rem;
+        text-align: right;
+        margin: 8rem 0rem 1rem 20%;
+        font-family: "Kohinoor Bangla";
+    }
+
+    .mobile-button-section > a{
+        font-size: 1rem;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        margin-left: 6%;
     }
 
     /*CART*/
@@ -1425,5 +1433,15 @@ filter:brightness(85%);
       .checkout-buttons > :last-child{
         margin: 1rem auto 1rem auto;
       }
-
 }
+
+
+@media (max-width: 505px) {
+    .book-text > p{
+        top: 35rem;
+        right: 2rem;
+        margin-bottom: 3rem;
+    
+    }
+}    
+
