@@ -554,11 +554,7 @@ a:active {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: darkgoldenrod;
-}
-
-.list-row{
-   
+    padding-left: 5rem;
 }
 
 
@@ -1279,9 +1275,6 @@ filter:brightness(85%);
     }
 
 
-    .list-pages{
-        visibility: hidden;
-    }
 
     .button-section{
         display: none;
@@ -1289,12 +1282,29 @@ filter:brightness(85%);
 
     .leftnav{
         margin-right: 2rem;
-        background-color: cyan;
     }
     
     .rightnav{
         margin-left: 2rem;
-        background-color: aquamarine;
+    }
+
+    /*All listings page*/
+
+    .list-nav > .list-pages {
+        visibility: hidden;
+    }
+
+    .list-nav > :first-child{
+        margin-right: 20vw;
+    }
+
+    .list-nav > :last-child{
+        margin-left: 20vw;
+    }
+
+    .list-nav-bottom{
+        height: 3rem;
+        white-space: nowrap;
     }
 
     /*Individual listing*/
