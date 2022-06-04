@@ -1298,6 +1298,8 @@ filter:brightness(85%);
         background-color: aquamarine;
     }
 
+    /*Individual listing*/
+
     .book-details{
         display: flex;
         justify-content: center;
@@ -1305,24 +1307,39 @@ filter:brightness(85%);
     }
 
     .main-image{
-        width: 70vw;
+        width: 40vw;
+        margin-left: 8%;
+    }
+
+    .book-text{
+        background-color: beige;
+        margin-left: 12%;
+        margin-right: 8%;
     }
 
     .book-text > h1{
         background-color: red;
-        font-size: 0.1em;
+        font-size: 1.1em;
+        min-width: fit-content;
+        text-align: right;
     }
 
     .book-text > h3{
         background-color: blueviolet;
-        font-size: 0.1em;
+        font-size: 1rem;
+        text-align: right;
+        margin-top: 0.2rem;
     }
 
     .book-text > p{
         position: absolute;
-        top: 50rem;
+        font-size: 0.9rem;
+        line-height: 01rem;
+        top: 32rem;
         right: 5rem;
         width: 80vw;
+        max-height: 20rem;
+        margin: 0rem 0rem 0rem 8rem;
 
     }
 
@@ -1332,7 +1349,7 @@ filter:brightness(85%);
 
     .button-section{
         position: absolute;
-        top: 35rem;
+        top: 5rem;
         right: 2rem;
         width: 30vw;
 
