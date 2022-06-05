@@ -23,6 +23,63 @@
             <h2 class="font-style heading">CHECKOUT</h2>
         </div>
 
+        <div class="checkout-progress">
+
+            <div class="progress-line"></div>
+
+            <div>
+                <div class="circle border"></div>
+                <p>Contact Information</p>
+
+            </div>
+            <div>
+                <div class="circle border"></div>
+                <p>Shipping Address</p>
+
+            </div>
+            <div>
+                <div class="circle border"></div>
+                <p>Payment Details</p>
+
+            </div>
+            <div>
+                <div class="circle border"></div>
+                <p>Confirm Checkout</p>
+            </div>
+
+        </div>
+
+        <section class="mobile-visible">
+            <div class="line-divider">
+                <h2 class="font-style heading" onclick="triggerSummary()">SHOW ORDER SUMMARY</h2>
+            </div>
+
+            <div class="order-summary-checkout" id="orderSummary">
+            
+
+                <div class="bought-items">
+                    
+                    <img src="./img/TheCandyHouse.jpeg" class="cart-image">
+                    
+        
+                    <div>
+                        <h1>1 x The Candy House</h1>
+                        <h3>Jennifer Egan</h3>
+                        <p>$29.99</p>
+        
+                    </div>
+
+
+                </div>
+
+                <div class="cart-total">
+                    <p>SUBTOTAL</p>
+                    <p>$29.99</p>
+                </div>
+
+            </div>
+        </section>
+
 
 
         <div class="all-content">
@@ -112,7 +169,7 @@
 
                     <div class="bought-items">
                         
-                        <img src="./img/TheCandyHouse.jpeg" class="cart-image">
+                        <img src="./img/TheCandyHouse.jpeg" class="cart-image summary-cart-image">
                         
             
                         <div>
@@ -172,6 +229,9 @@
         </div>
 
     </footer>
+
+
+    <script src="./javascript/main.js"></script>
 
 </body>
 </html>

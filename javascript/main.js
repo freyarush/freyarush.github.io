@@ -19,6 +19,13 @@ function triggerHamburger() {
   var hamburgerMenu = document.getElementById("hamburger");
   hamburgerMenu.classList.toggle("responsive");
 }
+
+function triggerSummary() {
+  var orderSection = document.getElementById("orderSummary");
+  orderSection.classList.toggle("responsive-block");
+}
+
+
   
   /*var menu = document.getElementsByClassName("mobile-menu");
 
