@@ -359,7 +359,6 @@ a:active {
 .all-books{
     display: flex;
     flex-wrap: wrap;
-    background-color: pink;
     margin-top: 3rem;
     margin-bottom: 2rem;
     flex-direction: row;
@@ -381,7 +380,6 @@ a:active {
 
 .multiple-books > div{
     display: flex;
-    background-color: aquamarine;
     max-width: fit-content;
 }
 
@@ -432,7 +430,6 @@ a:active {
 }
 
 .book-style{
-    background-color: plum;
     text-align: center;
 }
 
