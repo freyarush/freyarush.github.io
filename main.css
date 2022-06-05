@@ -302,11 +302,18 @@ a:active {
     margin-left: 10%;
 }
 
-.mobile-menu > :first-child > div > a{
+.mobile-menu > :first-child > div > h2{
+    top: 2.5rem;
     margin-left: 90%;
 }
 
+.mobile-menu > :nth-child(2) > div > h2{
+    top: 2.5rem;
+    margin-left: 10%;
+}
+
 .mobile-hamburger-dropdown{
+    display: none;
     background-color: #80afa4;
     width: 30%;
     height: fit-content;
