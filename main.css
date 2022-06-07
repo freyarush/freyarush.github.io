@@ -59,9 +59,9 @@ a:active {
 }
 
 .search-bar{
+    display: none;
     position: absolute;
     background-color: white;
-    display: none;
     width: 100vw;
     height: 10rem;
     box-shadow: 0 0.3rem 0.3rem #E7EEEA;
@@ -1181,6 +1181,10 @@ filter:brightness(85%);
 
 }
 
+.responsive{
+    display: flex;
+}
+
 
 /*----------------------MEDIA QUERIES----------------------*/
 
@@ -1546,6 +1550,17 @@ filter:brightness(85%);
         display: none;
     }
 
+    /* Checkout Complete */
+
+    .order-summary{
+        width: 100vw;
+    }
+
+    .mobile-div{
+        height: 2rem;
+        margin-bottom: 2rem;
+    }
+
 @media (max-width: 770px){
     .progress-line{
         margin-left: 1.3rem;
@@ -1563,10 +1578,6 @@ filter:brightness(85%);
     }
 } 
 
-.responsive{
-    display: flex;
-    
-}
 
 .responsive-block{
     display: block;
