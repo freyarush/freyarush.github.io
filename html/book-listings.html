@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    
+
+    <header>
+
+        <div id="searchBar" class="search-bar">
+            <img src="../img/searchicon.svg">
+            <input type="text" placeholder="SEARCH BOOKS HERE">
+            <img src="../img/cross.svg">
+        </div>
+
+        <div class="logo-section">
+            <nav class="font-style" Id="topnav">
+                <ul class="main-navbar">
+                    <li class="dropdown-trigger mobile-invis"><a href="book-listings.html">BOOKS</a>
+                        <ul class="dropdown-list">
+                            <div>
+                                <li><a href="book-listings.html">New Releases</a></li>
+                                <li><a href="book-listings.html">Bestsellers</a></li>
+                                <li><a href="book-listings.html">Education</a></li>
+                            </div>
+                            <div>
+                                <li><a href="book-listings.html">Fiction</a></li>
+                                <li><a href="book-listings.html">Non-Fiction</a></li>
+                                <li><a href="book-listings.html">Crime</a></li>
+                            </div>
+                            <div>
+                                <li><a href="book-listings.html">Politics</a></li>
+                                <li><a href="book-listings.html">Travel</a></li>
+                                <li><a href="book-listings.html">Cooking</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="mobile-invis"><a href="book-listings.html">EVENTS</a></li>
+                    <li class="mobile-invis"><a href="book-listings.html">SERVICES</a></li>
+                    <li class="mobile-invis"><a href="book-listings.html">PARTNERS</a></li>
+                    <li class="mobile-invis"><a href="book-listings.html">ABOUT</a></li>
+                    <li class="mobile-invis"><a href="book-listings.html">OUR VALUES</a></li>
+                </ul>
+            </nav>
+
+            
+        
+            <a href="../home-page.html"><img src="../img/greenlightlogo.svg" alt="greenlight bookstore logo" class="logo"></a>
+        </div>
+
+
+        <nav>
+            <ul class="secondary-navbar">
+                
+                <li onclick="triggerHamburger()"><a href="#"><img src="../img/hamburger.svg" class="icon mobile-visible"></a>
+                    
+                    <ul class="mobile-menu" id="hamburger"> 
+                        <li>
+                            <div class="line-divider">
+                                <h2 class="font-style heading">X</h2>              
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <h2 onclick="triggerExpandHamburger()" class="font-style heading">BOOKS</h2> 
+                                     
+                            </div>
+                            <ul class="mobile-hamburger-dropdown" id="hamburgerExpand">
+                                <li><a href="book-listings.html" class="font-style">New Releases</a></li>
+                                <li><a href="book-listings.html" class="font-style">Bestsellers</a></li>
+                                <li><a href="book-listings.html" class="font-style">Fiction</a></li>
+                                <li><a href="book-listings.html" class="font-style">Non-Fiction</a></li>
+                                <li><a href="book-listings.html" class="font-style">Education</a></li>
+                            </ul> 
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <a href="book-listings.html" class="font-style heading">EVENTS</a>              
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <a href="book-listings.html" class="font-style heading">ABOUT</a>              
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <a href="book-listings.html" class="font-style heading">SERVICES</a>              
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <a href="book-listings.html" class="font-style heading">PARTNERS</a>              
+                            </div>
+                        </li>
+                        <li>
+                            <div class="line-divider mobile-menu-item">
+                                <a href="book-listings.html" class="font-style heading">OUR VALUES</a>              
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li onclick="searchBar()"><a href="#"><img src="../img/searchicon.svg" class="icon"></a></li>
+                <li><a href="book-listings.html"><img src="../img/profileicon.svg" class="icon mobile-invis"></a></li>
+                <li class="dropdown-trigger"><a href="cart.html"><img src="../img/carticon.svg" class="icon"></a>
+                    <div class="cart-dropdown border">
+                        <div class="cart-listing">
+                        
+                            <img src="../img/TheCandyHouse.jpeg" class="cart-image">
+                            
+                
+                            <div class="cart-info">
+                                <h1>The Candy House</h1>
+                                <h3>Jennifer Egan</h3>
+                
+                                <div class="item-amount">
+                                    <a href="#"><p>-</p></a>
+                                    <div>
+                                        <p>1</p>
+                                    </div>
+                                    <a href="#"><p>+</p></a>
+                                </div>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img src="../img/greycross.png"></a>
+                                <p>$29.99</p>
+        
+        
+                            </div>
+                        </div>
+
+                        <div class="dropdown-buttons border">
+                            <a href="#" class="border">CONTINUE SHOPPING</a>
+                            <a href="checkout.html" class="">CHECKOUT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            
+            
+        </nav>
+
+        
+
+        
+    </header>
+
+    <main class="content">
+
+        <div class="line-divider">
+            <h2 class="font-style heading">NEW RELEASES</h2>              
+        </div>
+
+        <nav class="list-nav">
+            <div class="list-nav-style breadcrumbs">
+                <a href="../home-page.html">Home </a>
+                <p>&nbsp-&nbsp</p>
+                <a href="book-listings.html"> New Releases</a>
+            </div>
+            <div class="list-nav-style list-pages mobile-invis">
+                <a href="#"><&nbsp</a>
+                <a href="#">1&nbsp</a>
+                <a href="#">2&nbsp</a>
+                <a href="#">3&nbsp</a>
+                <a href="#">4&nbsp</a>
+                <a href="#">5&nbsp</a>
+                <a href="#">6&nbsp</a>
+                <a href="#">7&nbsp</a>
+                <a href="#">8&nbsp</a>
+                <a href="#">&nbsp></a>
+
+            </div>
+            <div class="list-nav-style filter">
+                <a href="#">Filter</a>
+
+            </div>
+
+        </nav>
+
+        <div class="all-books full-list">
+            <div class="multiple-books book-list ">
+                <div>
+                
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/TheCandyHouse.jpeg"></a>
+                        <h5>The Candy House</h5>
+                        <p>Jennifer Egan</p>
+                            <div>                                <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                         <a href="individual-listing.html"><img src="../img/FrenchBraid.jpeg"></a>
+                        <h5>French Braid</h5>                            <p>Anne Tyler</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/WomanEating.jpeg"></a>
+                        <h5>Woman, Eating</h5>
+                        <p>Claire Kohda</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Metronome.jpeg"></a>
+                        <h5>Metronome</h5>
+                        <p>Tom Watson</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/ASolitary.jpeg"></a>
+                        <h5>A Solitary Walk<br> On The Moon</h5>
+                        <p>Hilde Hinton</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Acanthus.jpeg"></a>
+                        <h5>Acanthus</h5>
+                        <p>Claire Potter</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Brother.jpeg"></a>
+                        <h5>Brother Of The More<br>Famous Jack</h5>
+                        <p>Barbara Tapido</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Paradais.jpeg"></a>
+                        <h5>Paradias</h5>
+                        <p>Fernanda Melchor</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+                <div>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Chai.jpeg"></a>
+                        <h5>Chai Time At Cinnamon Garden</h5>
+                        <p>Shankari KChandran</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Labour.jpeg"></a>
+                        <h5>The Cost of Labour</h5>
+                        <p>NAtalie Kon-Yu</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Portrait.jpeg"></a>
+                        <h5>Portrait Of An Unknown Lady</h5>
+                        <p>Maria Gainza</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wives.jpeg"></a>
+                        <h5>Our Wives Under the Sea</h5>
+                        <p>Julia Armfield</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Light.jpeg"></a>
+                        <h5>Where The Light Gets In</h5>
+                        <p>Zoe Coyle</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wife.jpeg"></a>
+                        <h5>The Secret Wife</h5>
+                        <p>Mark Lamprell</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Night.jpeg"></a>
+                        <h5>Even The Darkest Night</h5>
+                        <p>Javier Cercas</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Love.jpeg"></a>
+                        <h5>Love In The Big City</h5>
+                        <p>Sang Young Park</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+    
+            </div>
+        </div>
+
+        <div class="all-books full-list">
+            <div class="multiple-books book-list ">
+                <div>
+                
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/TheCandyHouse.jpeg"></a>
+                        <h5>The Candy House</h5>
+                        <p>Jennifer Egan</p>
+                            <div>                                <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                         <a href="individual-listing.html"><img src="../img/FrenchBraid.jpeg"></a>
+                        <h5>French Braid</h5>                            <p>Anne Tyler</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/WomanEating.jpeg"></a>
+                        <h5>Woman, Eating</h5>
+                        <p>Claire Kohda</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Metronome.jpeg"></a>
+                        <h5>Metronome</h5>
+                        <p>Tom Watson</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/ASolitary.jpeg"></a>
+                        <h5>A Solitary Walk<br> On The Moon</h5>
+                        <p>Hilde Hinton</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Acanthus.jpeg"></a>
+                        <h5>Acanthus</h5>
+                        <p>Claire Potter</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Brother.jpeg"></a>
+                        <h5>Brother Of The More<br>Famous Jack</h5>
+                        <p>Barbara Tapido</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Paradais.jpeg"></a>
+                        <h5>Paradias</h5>
+                        <p>Fernanda Melchor</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+                <div>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Chai.jpeg"></a>
+                        <h5>Chai Time At Cinnamon Garden</h5>
+                        <p>Shankari KChandran</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Labour.jpeg"></a>
+                        <h5>The Cost of Labour</h5>
+                        <p>NAtalie Kon-Yu</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Portrait.jpeg"></a>
+                        <h5>Portrait Of An Unknown Lady</h5>
+                        <p>Maria Gainza</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wives.jpeg"></a>
+                        <h5>Our Wives Under the Sea</h5>
+                        <p>Julia Armfield</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Light.jpeg"></a>
+                        <h5>Where The Light Gets In</h5>
+                        <p>Zoe Coyle</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wife.jpeg"></a>
+                        <h5>The Secret Wife</h5>
+                        <p>Mark Lamprell</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Night.jpeg"></a>
+                        <h5>Even The Darkest Night</h5>
+                        <p>Javier Cercas</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Love.jpeg"></a>
+                        <h5>Love In The Big City</h5>
+                        <p>Sang Young Park</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+    
+            </div>
+        </div>
+
+        <div class="all-books full-list">
+            <div class="multiple-books book-list ">
+                <div>
+                
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/TheCandyHouse.jpeg"></a>
+                        <h5>The Candy House</h5>
+                        <p>Jennifer Egan</p>
+                            <div>                                <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                         <a href="individual-listing.html"><img src="../img/FrenchBraid.jpeg"></a>
+                        <h5>French Braid</h5>                            <p>Anne Tyler</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/WomanEating.jpeg"></a>
+                        <h5>Woman, Eating</h5>
+                        <p>Claire Kohda</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Metronome.jpeg"></a>
+                        <h5>Metronome</h5>
+                        <p>Tom Watson</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/ASolitary.jpeg"></a>
+                        <h5>A Solitary Walk<br> On The Moon</h5>
+                        <p>Hilde Hinton</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Acanthus.jpeg"></a>
+                        <h5>Acanthus</h5>
+                        <p>Claire Potter</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Brother.jpeg"></a>
+                        <h5>Brother Of The More<br>Famous Jack</h5>
+                        <p>Barbara Tapido</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Paradais.jpeg"></a>
+                        <h5>Paradias</h5>
+                        <p>Fernanda Melchor</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+                <div>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Chai.jpeg"></a>
+                        <h5>Chai Time At Cinnamon Garden</h5>
+                        <p>Shankari KChandran</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Labour.jpeg"></a>
+                        <h5>The Cost of Labour</h5>
+                        <p>NAtalie Kon-Yu</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style">
+                        <a href="individual-listing.html"><img src="../img/Portrait.jpeg"></a>
+                        <h5>Portrait Of An Unknown Lady</h5>
+                        <p>Maria Gainza</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wives.jpeg"></a>
+                        <h5>Our Wives Under the Sea</h5>
+                        <p>Julia Armfield</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Light.jpeg"></a>
+                        <h5>Where The Light Gets In</h5>
+                        <p>Zoe Coyle</p>
+                        <div>
+                            <p>$32.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Wife.jpeg"></a>
+                        <h5>The Secret Wife</h5>
+                        <p>Mark Lamprell</p>
+                        <div>
+                            <p>$24.00</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Night.jpeg"></a>
+                        <h5>Even The Darkest Night</h5>
+                        <p>Javier Cercas</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                    </article>
+                    <article class="book-style mobile-invis">
+                        <a href="individual-listing.html"><img src="../img/Love.jpeg"></a>
+                        <h5>Love In The Big City</h5>
+                        <p>Sang Young Park</p>
+                        <div>
+                            <p>$29.99</p>
+                            <a href="individual-listing.html">BUY NOW</a>
+                        </div>
+                </div>
+
+    
+            </div>
+        </div>
+   
+
+        <nav class="list-nav-bottom">
+            
+            <div class="list-nav-style list-pages">
+                <a href="#"><&nbsp</a>
+                <a href="#">1&nbsp</a>
+                <a href="#">2&nbsp</a>
+                <a href="#">3&nbsp</a>
+                <a href="#">4&nbsp</a>
+                <a href="#">5&nbsp</a>
+                <a href="#">6&nbsp</a>
+                <a href="#">7&nbsp</a>
+                <a href="#">8&nbsp</a>
+                <a href="#">&nbsp></a>
+
+            </div>
+
+        </nav>
+
+
+
+
+
+        
+    </main>
+    
+    <footer class="footer">
+        
+        <nav class="footer-nav">
+             <ul class="leftnav font-style">
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">SHIPPING</a></li>
+            </ul>
+
+            <ul class="rightnav font-style">
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">LOCATIONS</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-divider">
+            <h2 class="font-style footer-heading">FOLLOW US</h2>
+        </div>
+
+        <div class="media-icons">
+            <a href="#"><img src="../img/facebooklogo.png" alt="facebook logo" class="facebook"></a>
+            <a href="#"><img src="../img/instalogo.png" alt="instagram logo" class="instagram"></a>
+            <a href="#"><img src="../img/email.svg" alt="email icon" class="email"></a>
+
+        </div>
+
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+
+</body>
+</html>

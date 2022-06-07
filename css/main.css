@@ -546,6 +546,7 @@ a:active {
     display: flex;
     margin-top: 2rem;
     justify-content: center;
+    color: #04604b;
 }
 
 .list-nav-style{
@@ -553,6 +554,10 @@ a:active {
     font-size: 1rem;
     color: #04604b;
     font-family: "Kohinoor Bangla";
+}
+
+.list-nav-style > a{
+    color: #04604b;
 }
 
 .breadcrumbs{
