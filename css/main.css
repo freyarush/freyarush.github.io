@@ -314,7 +314,6 @@ a:active {
 
 .mobile-hamburger-dropdown{
     display: none;
-    background-color: #80afa4;
     width: 30%;
     height: fit-content;
     margin: 2rem 50% 0rem 20%;
@@ -1578,8 +1577,7 @@ filter:brightness(85%);
     }
 } 
 
-
 .responsive-block{
     display: block;
 }
-
+}
